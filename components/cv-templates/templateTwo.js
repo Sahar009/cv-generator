@@ -7,7 +7,10 @@ import {IoIosCall} from 'react-icons/io'
 import {MdAttachEmail} from 'react-icons/md'
 import {TbWorld} from 'react-icons/tb'
 import { HiHome } from "react-icons/hi";
-import { BiCalendar } from "react-icons/bi";
+import { BiBuilding, BiCalendar } from "react-icons/bi";
+import { CiUser } from "react-icons/ci";
+import { BsFillTelephoneFill } from "react-icons/bs";
+import { AiFillMail } from "react-icons/ai";
 
 
 const templateTwo = React.forwardRef(({ condition }, ref) => {
@@ -32,7 +35,9 @@ const templateTwo = React.forwardRef(({ condition }, ref) => {
         
       <div className="left_Side" style={{backgroundColor: colors[0] ?? '#5695cd'}}>
       <div className="imgBx">
-                <img className="photo"  />
+                
+      <img src='photo' alt="Profile" type="file" onChange={(event) => handleImage(event)} />
+      
               </div>
               <div className='section3'>
       <div className='profile'>
@@ -171,6 +176,27 @@ const templateTwo = React.forwardRef(({ condition }, ref) => {
         <p className='hr'>{hobbies[0]}</p>
         
         
+      </div>
+      <div className='skills'>
+      
+    <h1>Reference</h1>
+        <hr/>
+       <div>
+        {reference.map((value, index)=>{
+          <div key={index}>
+          <p className='hr'>  {value.name ? (
+                <a className='link' >
+                  
+                  {console.log(value.name)}
+                </a>
+              ) : (
+                <span />
+              )}</p>
+          <p>{value.comapny}</p>
+          </div>
+        })}
+       </div>
+      
       </div>
     
       </div>

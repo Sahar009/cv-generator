@@ -156,7 +156,7 @@
 
 @media screen and (max-width: 820px) {
     .generator {
-        display: flex;
+        display: block;
     }
     .generator__right {
         position: relative;
@@ -164,6 +164,10 @@
     }
     .preview__body{
         width: 85%;
+    }
+    .overlay__templates{
+        position: relative;
+        width: 100%;
     }
     /* .preview {
 display: none;

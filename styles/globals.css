@@ -7,12 +7,12 @@
 }
 
 body{
-  font-family: 'century gothic';
+  font-family:"century gothic";
 
 }
 
-:root{
-}
+/* :root{
+} */
 
 .w-1 {
   width: 100px !important;
