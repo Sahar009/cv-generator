@@ -292,63 +292,63 @@ const templateOne = React.forwardRef(({condition}, ref) => {
           <div className={styles.col1}>
          
         
-    <div className="resume__content">
+          <div className="resume__content">
  
-            {reference[0].map((value, index) => (
-                
-                <div className="xp-item" key={index}>
-                  <div className={styles.section}>
-                 <div className={`${styles.sectionTitle}`} >
-                 Reference      
-               </div>
-               <div className={styles.extrainfo}>
-                  <p className={styles.links}>
-                    {value.name ? (
-                <a className={styles.link} >
-                  <CiUser style={{color: colors[0] ?? '#5695cd'}} className={styles.icon}/>
-                  {value.name}
-                </a>
-              ) : (
-                <span />
-              )}
-                  </p>
-                  <small className={styles.links}>
-                  {value.comapny ? (
-                <a className={styles.link} >
-                  <BiBuilding style={{color: colors[0] ?? '#5695cd'}} className={styles.icon}/>
-                  {value.comapny}
-                </a>
-              ) : (
-                <span />
-              )}
-                  </small>
+ {reference[0].map((value, index) => (
+     
+     <div className="xp-item" key={index}>
+       <div className={styles.section}>
+      <div className={`${styles.sectionTitle}`} >
+      Reference      
+    </div>
+    <div className={styles.extrainfo}>
+       <p className={styles.links}>
+         {value.name ? (
+     <a className={styles.link} >
+       <CiUser style={{color: colors[0] ?? '#5695cd'}} className={styles.icon}/>
+       {value.name}
+     </a>
+   ) : (
+     <span />
+   )}
+       </p>
+       <small className={styles.links}>
+       {value.comapny ? (
+     <a className={styles.link} >
+       <BiBuilding style={{color: colors[0] ?? '#5695cd'}} className={styles.icon}/>
+       {value.comapny}
+     </a>
+   ) : (
+     <span />
+   )}
+       </small>
 
-                  <small className={styles.links}>
-                  {value.phone ? (
-                <a className={styles.link} >
-                  <BsFillTelephoneFill style={{color: colors[0] ?? '#5695cd'}} className={styles.icon}/>
-                  {value.phone}
-                </a>
-              ) : (
-                <span />
-              )}
-                  </small>
-                  <small className={styles.links}>
-                  {value.email ? (
-                <a className={styles.link} >
-                  <AiFillMail style={{color: colors[0] ?? '#5695cd'}} className={styles.icon}/>
-                  {value.email}
-                </a>
-              ) : (
-                <span />
-              )}
-                  </small>
-                  </div>
-                 
-        
-                  </div>
-                </div>
-              ))}
+       <small className={styles.links}>
+       {value.phone ? (
+     <a className={styles.link} >
+       <BsFillTelephoneFill style={{color: colors[0] ?? '#5695cd'}} className={styles.icon}/>
+       {value.phone}
+     </a>
+   ) : (
+     <span />
+   )}
+       </small>
+       <small className={styles.links}>
+       {value.email ? (
+     <a className={styles.link} >
+       <AiFillMail style={{color: colors[0] ?? '#5695cd'}} className={styles.icon}/>
+       {value.email}
+     </a>
+   ) : (
+     <span />
+   )}
+       </small>
+       </div>
+      
+
+       </div>
+     </div>
+   ))}
 </div>
 </div>
           

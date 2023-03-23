@@ -13,7 +13,7 @@ export default function colors() {
     <div className="colors">
       <button
         className="btn__color black"
-        onClick={() => handleColor("#000")}
+        onClick={() => handleColor("#000000")}
       ></button>
       <button
         className="btn__color red"

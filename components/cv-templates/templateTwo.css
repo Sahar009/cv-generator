@@ -20,13 +20,13 @@
 
   display: grid;
   grid-template-columns: 30% 70%;
-  grid-template-rows: 20rem 12.5rem 20rem 42.5rem
+  grid-template-rows: 20rem 4rem 22rem 40rem
 }
 .container .left_Side {
   position: relative;
   background-color:black;
   display: block;
-  grid-row: 1/span 4;
+  grid-row: 1/span 4 ;
  max-height:100%; 
 }
 .profileText {
@@ -49,7 +49,6 @@
   top: 0;
   left: 0;
   width: 100%;
- 
   object-fit: cover;
 }
 .photo {
@@ -58,16 +57,13 @@
 }
 .profileText h2 {
   color: #fff;
-  font-size: 1.em;
+  font-size: 1.2em;
   text-transform: uppercase;
   text-align: center;
   font-weight: 300;
   line-height: 1.4em;
 }
-.profileText h2 span {
-  font-size: 0.8em;
-  font-weight: 300;
-}
+
 .contactInfo {
   padding-top: 40px;
 }
@@ -82,6 +78,7 @@
   font-size: 1.5rem;
   font-weight: 600;
   
+
 }
 .skills p{
   font-size: 1rem;
@@ -91,28 +88,15 @@
 
 
 /*  dellaware */
-* {
-margin: 0;
-padding: 0;
-font-size: 16px;
-font-weight: bold;
-line-height: 1.5;
-letter-spacing: 5px;
-}
 
 
-.app {
-  display: flex;
-  flex-direction: column;
-  max-width: 100%;
-  max-height: 100%;
-}
+
 
 .body {
   line-height: 1.5;
   margin: 1rem;
   max-width:95%;
-  min-height: 20rem;
+  min-height: 25rem;
   grid-row: 100%;
   
 }
@@ -122,10 +106,10 @@ letter-spacing: 5px;
  
 }
 .objective {
-  padding: 1rem;
+  padding-top: 1rem;
   width:100%;
   position: relative;
-  max-height: 20rem;
+  max-height: 25rem;
   word-wrap: wrap;
   word-break: break-all;
  
@@ -137,82 +121,85 @@ letter-spacing: 5px;
 .objective p {
   width: 100%;
   height: 100%;
-  font-size: 0.9em;
+  font-size: 1em;
   color: black;
 }
 
 .objective hr {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.596);
   max-width: 12rem;
-  margin-left: 2rem;
-  margin-bottom: 1rem;
+  height: 2px;
+  margin: 1rem 2rem ;
 }
 .objective h1 {
-  font-size: 2rem;
-  padding: 0 1rem 0.5rem 0rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  
 }
 
 /*  ------------- SECTION 2 --------------- */
 .section2 {
 
-grid-row: 2/span 2;
-grid-column: 1/ span 2;
+
   align-items: center;
   max-width: 100%;
  min-width: 100%;
   min-height: 10rem;
-  background-color: rgb(79, 78, 78);
-  position: absolute;
-  top: 0;
-  left: 0;
+
+  
 }
 .section2s {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-
+  display: block;
   justify-content: space-between;
   text-transform: capitalize;
   gap: 1em;
-  padding:  3rem;
   max-width: 100%;
   min-width: 20%;
+}
+.section2s h1{
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.section2s  hr {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.596);
+  max-width: 12rem;
+  height: 2px;
+  margin: 1rem 2rem ;
   
 }
 .section2 p {
 position: relative;
 padding-top: 0.7rem;
-font-size: 0.9em;
-font-weight: 500;
-color: white;
+font-size: 1em;
+font-weight: 600;
+color: rgb(0, 0, 0);
 text-transform: capitalize;
 display: inline-block;
 max-width: 90%;
-
 word-wrap: break-all;
-  flex-wrap: wrap;
-  word-wrap: break-word;
-  
-
+flex-wrap: wrap;
+word-wrap: break-word;
 }
 
 .section2 .icons {
 font-size: 2.1rem;
 padding-top: 12px;
-
 justify-content: space-around;
-color: white;
+color: rgb(0, 0, 0);
 }
 
 .tel, .add, .email,.web{
- 
   display: flex;
-  max-width: 200px;
+  max-width: 100%;
   max-height: 8rem;
 }
 
 
 /*  ------------- SECTION 3 --------------- */
 .section3 {
-  padding-top: 10rem;
+  padding-top: 1rem;
   position: relative;
   grid-column: 2/span 1;
  height: 100%;
@@ -248,18 +235,17 @@ color: white;
 }
 .skills hr {
   display: flex;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.596);
   max-width: 12rem;
   height: 2px;
   margin: 1rem 2rem ;
 }
 .nameWork {
   max-width: 100%;
-  
   word-wrap: break-word;
 }
 .nameWork h1 {
-  font-size: 1em;
+  font-size: 1.5em;
   text-transform: uppercase;
 }
  .nameWork h5 {
@@ -272,7 +258,7 @@ color: white;
   
 }
 .education h3 {
-  font-size: 1.1em;
+  font-size: 0.9em;
   font-weight: 500;
   text-transform: uppercase;
   color: #00eeb5;
@@ -285,14 +271,15 @@ color: white;
   padding-top: 15px;
 }
 .education h6{
+  
   display: flex;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   font-weight:400;
   color: #00eeb5;
   word-wrap: break-word;
 }
 .education p {
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: rgb(172, 167, 167);
   word-wrap: break-word;
 }
@@ -349,8 +336,9 @@ color: white;
   color: rgb(172, 167, 167);
 }
 .section4{
-  position: absolute;
-  top: 0;
+  padding-top: 1rem;
+  position: relative;
+  
   grid-row: 3/span 4;
 }
 .employment{
@@ -398,17 +386,19 @@ color: white;
 }
 .employment hr {
   display: flex;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.596);
   max-width: 12rem;
   height: 2px;
   margin: 1rem 2rem ;
 }
+
+
 @media (max-width: 1000px) {
   .container {
     margin: 10px;
   }
   .objective h1{
-    font-size:medium;
+    font-size:smaller;
   }
   .objective p{
     font-size: smaller;
@@ -424,6 +414,9 @@ color: white;
    font-size: small;
   
    
+  }
+  .section2s h1{
+    font-size: small;
   }
   .nameWork{
     font-size:50%;

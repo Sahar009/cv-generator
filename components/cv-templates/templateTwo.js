@@ -31,9 +31,9 @@ const templateTwo = React.forwardRef(({ condition }, ref) => {
       condition ? "two-column resume" : " two-column resume adjustedPreview"
     }>
     {personal[0].map((value, index) => (
-    <div ref={ref} className="container">
+    <div ref={ref} className="container" key={index}>
         
-      <div className="left_Side" style={{backgroundColor: colors[0] ?? '#5695cd'}}>
+      <div className="left_Side" >
       <div className="imgBx">
                 
       <img src='photo' alt="Profile" type="file" onChange={(event) => handleImage(event)} />
@@ -46,12 +46,12 @@ const templateTwo = React.forwardRef(({ condition }, ref) => {
         
         <div className='nameWork'>
     
-          <h1 className='name'>{value.firstName}</h1>
+          <h1 className='name' >{value.firstName}</h1>
           <h1 className='name'>{value.lastName}</h1>
           <h5 className='name'>{value.title}</h5>
         </div>
-        <div className='education'>
-          <h3>education</h3>
+        <div className='education' >
+          <h3 style={{color: colors[0] ?? '#00eeb5'}}>education</h3>
         <hr/>
         {education[0].map((value, index) => (
           <>
@@ -67,7 +67,7 @@ const templateTwo = React.forwardRef(({ condition }, ref) => {
         </div>
         
         <div className='hobbies'>
-        <h3> SKILLS</h3>
+        <h3 style={{color: colors[0] ?? '#00eeb5'}}> SKILLS</h3>
         <hr/>
         {skill[0].map((value, index) => (
           
@@ -78,7 +78,7 @@ const templateTwo = React.forwardRef(({ condition }, ref) => {
          
         </div>
         <div className="languages">
-        <h3>Languages</h3>
+        <h3 style={{color: colors[0] ?? '#00eeb5'}}>Languages</h3>
         <hr/>
         {language[0].map((value, index) => (
                 <div  key={index}>
@@ -120,6 +120,8 @@ const templateTwo = React.forwardRef(({ condition }, ref) => {
     <div className='section2'>
     
     <div className='section2s'>
+    <h1>Contact</h1>
+    <hr/>
     
     <div className='add'>
     <HiHome className="icons" style={{color: colors[0] ?? '#5695cd'}}/>
@@ -138,10 +140,10 @@ const templateTwo = React.forwardRef(({ condition }, ref) => {
     <p>{value.email}</p>
     </div>
 
-    <div className='web'>
+    {/* <div className='web'>
     <TbWorld className='icons'style={{color: colors[0] ?? '#5695cd'}}/>
     <p>{value.country}</p>
-    </div>
+    </div> */}
     </div>
     </div>
     <div className="section4">
@@ -171,7 +173,7 @@ const templateTwo = React.forwardRef(({ condition }, ref) => {
                   
       </div>
       <div className='skills'>
-    <h1>HOBBIES</h1>
+    <h1>Hobbies</h1>
         <hr/>
         <p className='hr'>{hobbies[0]}</p>
         
@@ -182,19 +184,16 @@ const templateTwo = React.forwardRef(({ condition }, ref) => {
     <h1>Reference</h1>
         <hr/>
        <div>
-        {reference.map((value, index)=>{
-          <div key={index}>
-          <p className='hr'>  {value.name ? (
-                <a className='link' >
-                  
-                  {console.log(value.name)}
-                </a>
-              ) : (
-                <span />
-              )}</p>
-          <p>{value.comapny}</p>
-          </div>
-        })}
+       {reference[0].map((value, index)=>(
+        
+        <div key={index}>
+        
+        
+        <h3>{value.name}</h3>
+        <h3>{value.comapny}</h3>
+        <h3>{value.phone}</h3>
+        </div>
+))}
        </div>
       
       </div>

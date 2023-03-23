@@ -1,5 +1,6 @@
 import React from "react";
 import Image from 'next/image'
+import Link from "next/link";
 
 export default function hero() {
   return (
@@ -12,9 +13,9 @@ export default function hero() {
         <div className="hero__text">
         Improve your resume with templates that have been proven to meet industry standards and are quick and simple to customize. Try them now for free.
         </div>
-        <button className="btn__primary">
+        <Link className="btn__primary" href="/generator">
             Create My Resume
-        </button>
+          </Link>
 
       </div>
         <div className="resume__img">

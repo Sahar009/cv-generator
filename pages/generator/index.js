@@ -181,7 +181,7 @@ export default function index() {
            />
             </div>
             <div className="small__templaes">
-           <BsFillLockFill size={50} color='#fff' className='icons'   />
+           <BsFillLockFill size={50} color='#fff' className='icons'/>
             </div>
             <div className="small__templaes">
            <BsFillLockFill size={50} color='#fff' className='icons'/>

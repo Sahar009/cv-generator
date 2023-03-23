@@ -10,7 +10,18 @@
     url("https://fonts.gstatic.com/s/opensans/v16/mem8YaGs126MiZpBA-UFVZ0b.woff2")
       format("woff2");
 }
-
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+  src: local("Roboto"), local("Roboto-Regular"),
+    url("https://fonts.gstatic.com/s/roboto/v19/KFOmCnqEu92Fr1Mu4mxK.woff2")
+      format("woff2");
+}
 @page {
   size: A4;
 }
@@ -30,8 +41,8 @@
   flex-direction: column;
   display: flex;
   position: relative;
-  font-size: 23px;
-  font-weight:800;
+  font-size: 16px;
+  font-weight:700;
   text-transform: capitalize;
   align-items: center;
   justify-content: center;
@@ -143,10 +154,9 @@
   font-weight: 550;
   font-size: 0.9rem;
   line-height: 1rem;
-  margin: 5px 10px 0 10px;
-  padding-left: 11px;
+  margin: 5px 15px 0 10px;
+  padding-right: 5%;
   gap: 4px;
-  width:210px
   
  
 }
@@ -154,11 +164,10 @@
   font-weight: 550;
   font-size: 0.9rem;
   line-height: 1rem;
+  padding-left: 5%;
   line-height: 1rem;
-  margin: 5px 2px 0 10px;
-  max-width:250px;
-  word-break: break-all;
-
+  margin: 5px 5px 0 15px;
+  
 }
 
 .content .subTitle {
@@ -201,7 +210,8 @@
   margin:0 0 0 15px;
   color: #555;
   padding: 1px;
-  
+  border-top: 0.5px dotted rgba(0, 0, 0, 0.047);
+  border-bottom:  0.5px dotted rgba(0, 0, 0, 0.045);
 }
 .content .description li{
   list-style: none;
@@ -252,9 +262,6 @@
   display: inline-block;
   font-size: 0.9rem;
 }
-.edsection{
-  display: flex;
-}
 .extrainfo{
   display: flex;
   flex-direction: column;
@@ -284,13 +291,7 @@
 .icon{
   font-size: 0.9em;
   justify-content: space-around;
-  margin-right: 1px;
-  color: white;
-
+  margin-right: 8px;
 }
 
 
-
-  
-   
- 
